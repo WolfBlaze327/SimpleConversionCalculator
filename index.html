@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+	<div class="container-fluid">
+		
+		<div class="row">
+			<h1 class="h1 text-center">SIMPLE CONVERTER</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-5 container mt-3 ">
+				<br>
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" href="#weight">Weight</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" data-bs-toggle="tab" href="#length">Length</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" data-bs-toggle="tab" href="#time">Time</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" data-bs-toggle="tab" href="#temp">Temperature</a>
+					</li>
+				</ul>
+
+
+				<div class="tab-content border">
+				    <div id="weight" class="container tab-pane active"><br>
+				    	<h3>Weight Converter</h3>
+				    	<div class="row mx-auto">
+					    	<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	      						<input type="number" class="form-control" id="iweight" placeholder="Input Grams">
+	     						<label >Input Grams</label>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Kilogram()">Kilogram</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Pound()">Pound</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Ounces()">Ounces</button>
+	    					</div>
+    					</div>
+    					<div class="col-md-4 form-floating mb-3 mt-3 text-center mx-auto">
+	      						<input type="input" class="form-control" id="rweight" placeholder="Input Grams" disabled="disabled">
+	     						<label>Result</label><br>
+	    				</div>
+				 	</div>
+
+
+				    <div id="length" class="container tab-pane fade"><br>
+				    	<h3>Length Converter</h3>
+				    	<div class="row mx-auto">
+					    	<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	      						<input type="number" class="form-control" id="ilength" placeholder="Input Centimeter">
+	     						<label>Input Centimeter</label>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Inch()">Inch</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Feet()">Feet</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Meter()">Meter</button>
+	    					</div>
+    					</div>
+    					<div class="col-md-4 form-floating mb-3 mt-3 text-center mx-auto">
+	      						<input type="input" class="form-control" id="rlength" placeholder="Input Grams" disabled="disabled">
+	     						<label>Result</label>
+	    				</div>
+				    </div>
+
+
+				    <div id="time" class="container tab-pane fade"><br>
+				    	<h3>Time Converter</h3>
+				    	<div class="row mx-auto">
+					    	<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	      						<input type="number" class="form-control" id="itime" placeholder="Input Minutes">
+	     						<label >Input Minutes</label>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Milisecond()">Milisecond</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Second()">Second</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Hours()">Hours</button>
+	    					</div>
+    					</div>
+    					<div class="col-md-4 form-floating mb-3 mt-3 text-center mx-auto">
+	      					<input type="input" class="form-control" id="rtime" placeholder="Input Grams" disabled="disabled">
+	     					<label>Result</label>
+	    				</div>
+				    </div>
+
+
+				    <div id="temp" class="container tab-pane fade"><br>
+				    	<h3>Temperature Converter</h3>
+				    	<div class="row mx-auto">
+					    	<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	      						<input type="number" class="form-control" id="itemp" placeholder="Input Celsius">
+	     						<label >Input Celsius</label>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Fahrenheit()">Fahrenheit</button>
+	    					</div>
+	    					<div class="col-md-3 form-floating mb-3 mt-3 text-center">
+	    						<button onclick="Kelvin()">Kelvin</button>
+	    					</div>
+    					</div>
+    					<div class="col-md-4 form-floating mb-3 mt-3 text-center mx-auto">
+	      						<input type="input" class="form-control" id="rtemp" placeholder="Input Grams" disabled="disabled">
+	     						<label>Result</label>
+	    				</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="converter.js"></script>
+
+</body>
+</html>
